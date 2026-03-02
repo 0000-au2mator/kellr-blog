@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de" data-lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kellr — Building in Public</title>
+    <meta name="description" content="Building an iOS app entirely with AI. No coding experience. Just WhatsApp voice messages and Claude.">
+    <link rel="icon" href="https://bflxydqsutvpjzrevjlh.supabase.co/storage/v1/object/public/public-assets/kellr-logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">
+                <img src="https://bflxydqsutvpjzrevjlh.supabase.co/storage/v1/object/public/public-assets/kellr-logo.png" alt="Kellr" class="nav-icon">
+                <span>Kellr</span>
+            </a>
+            <div class="nav-links">
+                <a href="#journal" data-de="Journal" data-en="Journal">Journal</a>
+                <a href="#stats" data-de="Dashboard" data-en="Dashboard">Dashboard</a>
+                <a href="#about" data-de="Über" data-en="About">Über</a>
+                <button class="lang-toggle" onclick="toggleLang()" aria-label="Toggle language">
+                    <span class="lang-flag">🇬🇧</span>
+                </button>
+            </div>
+            <button class="nav-hamburger" onclick="toggleMenu()" aria-label="Menu">☰</button>
+        </div>
+        <div class="nav-mobile" id="mobileMenu">
+            <a href="#journal" onclick="toggleMenu()" data-de="Journal" data-en="Journal">Journal</a>
+            <a href="#stats" onclick="toggleMenu()" data-de="Dashboard" data-en="Dashboard">Dashboard</a>
+            <a href="#about" onclick="toggleMenu()" data-de="Über" data-en="About">Über</a>
+            <button class="lang-toggle" onclick="toggleLang()" aria-label="Toggle language">
+                <span class="lang-flag">🇬🇧</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="hero-badge" data-de="🧪 KI-Experiment" data-en="🧪 AI Experiment">🧪 KI-Experiment</div>
+            <h1>
+                <span data-de="Eine App bauen." data-en="Building an app.">Eine App bauen.</span><br>
+                <span class="text-green" data-de="Ohne Code zu schreiben." data-en="Without writing code.">Ohne Code zu schreiben.</span>
+            </h1>
+            <p class="hero-sub" data-de="Michael baut eine iOS App komplett mit KI. Kein Xcode. Kein SwiftUI-Wissen. Nur WhatsApp-Sprachnachrichten, OpenClaw und Claude Opus." data-en="Michael is building an iOS app entirely with AI. No Xcode. No SwiftUI knowledge. Just WhatsApp voice messages, OpenClaw, and Claude Opus.">
+                Michael baut eine iOS App komplett mit KI. Kein Xcode. Kein SwiftUI-Wissen. Nur WhatsApp-Sprachnachrichten, OpenClaw und Claude Opus.
+            </p>
+            <div class="hero-cta">
+                <a href="#journal" class="btn btn-primary" data-de="📖 Journal lesen" data-en="📖 Read Journal">📖 Journal lesen</a>
+                <a href="#stats" class="btn btn-outline" data-de="📊 Live Stats" data-en="📊 Live Stats">📊 Live Stats</a>
+            </div>
+            <div class="hero-app">
+                <img src="https://bflxydqsutvpjzrevjlh.supabase.co/storage/v1/object/public/public-assets/kellr-logo.png" alt="Kellr App Icon" class="hero-app-icon">
+                <div>
+                    <strong>Kellr</strong>
+                    <span data-de="Vorratskammer-Tracker für iOS" data-en="Pantry tracker for iOS">Vorratskammer-Tracker für iOS</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journal -->
+    <section id="journal" class="section">
+        <div class="container">
+            <h2 data-de="📖 Build Journal" data-en="📖 Build Journal">📖 Build Journal</h2>
+            <p class="section-sub" data-de="Tägliche Einträge — was gebaut wurde, was es gekostet hat, was schiefging." data-en="Daily entries — what was built, what it cost, what went wrong.">Tägliche Einträge — was gebaut wurde, was es gekostet hat, was schiefging.</p>
+            <div id="journal-entries"></div>
+        </div>
+    </section>
+
+    <!-- Stats Dashboard -->
+    <section id="stats" class="section section-alt">
+        <div class="container">
+            <h2 data-de="📊 Dashboard" data-en="📊 Dashboard">📊 Dashboard</h2>
+            <p class="section-sub" data-de="Laufende Gesamtstatistiken des Experiments." data-en="Running totals of the experiment.">Laufende Gesamtstatistiken des Experiments.</p>
+            <div class="stats-grid" id="stats-grid"></div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 data-de="Über das Projekt" data-en="About the Project">Über das Projekt</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <h3 data-de="🧑‍💻 Wer ist Michael?" data-en="🧑‍💻 Who is Michael?">🧑‍💻 Wer ist Michael?</h3>
+                    <p data-de="IT-Profi aus der Microsoft-Welt. PowerShell, Azure, Automatisierung. Versteht Programmier-Grundlagen, aber hat null Erfahrung mit iOS oder SwiftUI. Kein Developer — ein Automatisierer, der KI auf die Probe stellt." data-en="IT pro from the Microsoft world. PowerShell, Azure, automation. Understands programming basics but has zero experience with iOS or SwiftUI. Not a developer — an automator putting AI to the test.">
+                        IT-Profi aus der Microsoft-Welt. PowerShell, Azure, Automatisierung. Versteht Programmier-Grundlagen, aber hat null Erfahrung mit iOS oder SwiftUI. Kein Developer — ein Automatisierer, der KI auf die Probe stellt.
+                    </p>
+                </div>
+                <div class="about-card">
+                    <h3 data-de="🛠 Tech Stack" data-en="🛠 Tech Stack">🛠 Tech Stack</h3>
+                    <ul>
+                        <li><strong>AI:</strong> Claude Opus (Anthropic)</li>
+                        <li><strong>Platform:</strong> OpenClaw</li>
+                        <li><strong>Input:</strong> WhatsApp Voice Messages</li>
+                        <li><strong>App:</strong> SwiftUI / iOS</li>
+                        <li><strong>Backend:</strong> Supabase</li>
+                        <li><strong>CI/CD:</strong> GitHub Actions</li>
+                    </ul>
+                </div>
+                <div class="about-card">
+                    <h3 data-de="🔗 Links" data-en="🔗 Links">🔗 Links</h3>
+                    <div class="link-list">
+                        <a href="https://github.com/0000-au2mator/kellr" target="_blank">📦 GitHub Repo (Kellr)</a>
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank">💼 LinkedIn</a>
+                        <a href="https://github.com/0000-au2mator/kellr-blog" target="_blank">📝 Blog Source</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p data-de="Built in public mit 🤖 KI — kein Mensch hat Code geschrieben." data-en="Built in public with 🤖 AI — no human wrote code.">Built in public mit 🤖 KI — kein Mensch hat Code geschrieben.</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
