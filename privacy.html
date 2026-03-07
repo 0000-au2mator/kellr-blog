@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung — Kellr</title>
+    <meta name="description" content="Datenschutzerklärung der Kellr App">
+    <link rel="icon" href="https://bflxydqsutvpjzrevjlh.supabase.co/storage/v1/object/public/public-assets/kellr-logo.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .privacy { max-width: 720px; margin: 100px auto 60px; padding: 0 20px; }
+        .privacy h1 { font-size: 2rem; margin-bottom: 8px; }
+        .privacy .subtitle { color: var(--text2); margin-bottom: 40px; }
+        .privacy h2 { font-size: 1.3rem; margin-top: 36px; margin-bottom: 12px; color: var(--green); }
+        .privacy h3 { font-size: 1.05rem; margin-top: 20px; margin-bottom: 8px; }
+        .privacy p, .privacy li { color: var(--text2); margin-bottom: 8px; line-height: 1.7; }
+        .privacy ul { padding-left: 20px; margin-bottom: 12px; }
+        .privacy strong { color: var(--text); }
+        .privacy a { color: var(--green); }
+        .privacy hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+        .lang-switch { display: inline-flex; gap: 8px; margin-bottom: 24px; }
+        .lang-switch button { background: var(--bg3); border: 1px solid var(--border); color: var(--text2); padding: 6px 16px; border-radius: 8px; cursor: pointer; font-size: 0.9rem; }
+        .lang-switch button.active { background: var(--green); color: #000; border-color: var(--green); font-weight: 600; }
+        .privacy [lang="en"] { display: none; }
+        .privacy.en [lang="de"] { display: none; }
+        .privacy.en [lang="en"] { display: block; }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">
+                <img src="https://bflxydqsutvpjzrevjlh.supabase.co/storage/v1/object/public/public-assets/kellr-logo.png" alt="Kellr" class="nav-icon">
+                <span>Kellr</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="privacy" id="privacy">
+        <div class="lang-switch">
+            <button onclick="setLang('de')" id="btn-de" class="active">Deutsch</button>
+            <button onclick="setLang('en')" id="btn-en">English</button>
+        </div>
+
+        <!-- DEUTSCH -->
+        <div lang="de">
+            <h1>Datenschutzerklärung</h1>
+            <p class="subtitle">Stand: März 2026 · Verantwortlicher: Michael Seidl, Österreich · <a href="mailto:contact@kellr.app">contact@kellr.app</a></p>
+
+            <h2>1. Überblick</h2>
+            <p>Kellr ist eine App zur Verwaltung deiner Vorratskammer. Wir nehmen Datenschutz ernst und erheben nur die Daten, die für den Betrieb der App notwendig sind. Wir verkaufen keine Daten und verwenden keine Tracking- oder Analyse-Tools.</p>
+
+            <h2>2. Welche Daten wir erheben</h2>
+            <h3>2.1 Konto-Daten</h3>
+            <ul>
+                <li><strong>E-Mail-Adresse</strong> — für Registrierung und Login</li>
+                <li><strong>Anzeigename</strong> — frei gewählt, zur Anzeige im Haushalt</li>
+                <li>Bei <strong>Apple Sign In</strong>: Wir erhalten nur die von Apple freigegebene E-Mail-Adresse (kann eine Relay-Adresse sein)</li>
+            </ul>
+            <h3>2.2 Nutzungsdaten (von dir eingegeben)</h3>
+            <ul>
+                <li><strong>Produkte:</strong> Name, Barcode, Menge, Ablaufdatum, Lagerort, Kategorie, Fotos</li>
+                <li><strong>Haushalt:</strong> Haushaltsname, Mitgliederliste</li>
+                <li><strong>Transaktionen:</strong> Ein-/Auslagerungen mit Zeitstempel</li>
+            </ul>
+            <h3>2.3 Geräte-Daten</h3>
+            <ul>
+                <li><strong>Kamera:</strong> Nur für den Barcode-Scanner, Bilder werden nicht übertragen</li>
+                <li><strong>Lokaler Speicher:</strong> SwiftData-Cache auf deinem Gerät (Offline-Funktion)</li>
+            </ul>
+            <h3>2.4 Daten, die wir NICHT erheben</h3>
+            <ul>
+                <li>Kein Standort</li>
+                <li>Keine Kontakte</li>
+                <li>Keine Werbe-IDs</li>
+                <li>Keine Analytics oder Tracking</li>
+                <li>Keine Nutzungsstatistiken</li>
+                <li>Keine Gesundheitsdaten</li>
+            </ul>
+
+            <h2>3. Wie wir Daten verarbeiten</h2>
+            <h3>3.1 Hosting &amp; Speicherung</h3>
+            <p>Alle Daten werden bei <strong>Supabase</strong> (Standort: Frankfurt, Deutschland, EU) gespeichert. Supabase ist DSGVO-konform. Produktfotos werden in Supabase Storage gespeichert.</p>
+            <h3>3.2 Externe Dienste</h3>
+            <ul>
+                <li><strong>OpenFoodFacts</strong> (openfoodfacts.org): Beim Barcode-Scan wird der Barcode an die offene OpenFoodFacts-Datenbank gesendet, um Produktinformationen abzurufen. OpenFoodFacts ist ein gemeinnütziges Open-Data-Projekt.</li>
+                <li><strong>Amazon Affiliate Links:</strong> In der App können Links zu Amazon-Produkten angezeigt werden. Diese enthalten ein Affiliate-Tag. Erst beim Klick wirst du zu Amazon weitergeleitet — Amazons eigene Datenschutzerklärung gilt dann.</li>
+                <li><strong>Apple Sign In:</strong> Authentifizierung über Apples Server.</li>
+            </ul>
+            <h3>3.3 Keine Weitergabe</h3>
+            <p>Wir geben deine Daten nicht an Dritte weiter, verkaufen sie nicht und verwenden sie nicht für Werbung.</p>
+
+            <h2>4. Haushalt &amp; geteilte Daten</h2>
+            <p>Wenn du einen Haushalt erstellst oder einem beitrittst, teilen alle Mitglieder die Produkt- und Transaktionsdaten dieses Haushalts. Jedes Mitglied kann Produkte hinzufügen, bearbeiten und entfernen.</p>
+
+            <h2>5. Datensicherheit</h2>
+            <ul>
+                <li>Passwörter werden gehashed (bcrypt)</li>
+                <li>API-Kommunikation über HTTPS</li>
+                <li>Tokens werden im iOS Keychain gespeichert</li>
+                <li>Zugriff auf Daten nur mit gültigem, authentifiziertem Token</li>
+            </ul>
+
+            <h2>6. Deine Rechte (DSGVO)</h2>
+            <p>Du hast das Recht auf:</p>
+            <ul>
+                <li><strong>Auskunft</strong> — Welche Daten über dich gespeichert sind</li>
+                <li><strong>Berichtigung</strong> — Falsche Daten korrigieren</li>
+                <li><strong>Löschung</strong> — Dein Konto und alle Daten löschen</li>
+                <li><strong>Datenübertragbarkeit</strong> — Export deiner Daten</li>
+                <li><strong>Widerspruch</strong> — Gegen die Verarbeitung</li>
+                <li><strong>Beschwerde</strong> — Bei der österreichischen Datenschutzbehörde (<a href="https://www.dsb.gv.at">dsb.gv.at</a>)</li>
+            </ul>
+            <p>Kontaktiere uns unter <a href="mailto:contact@kellr.app">contact@kellr.app</a> für jede dieser Anfragen.</p>
+
+            <h2>7. Konto löschen</h2>
+            <p>Du kannst dein Konto jederzeit in der App unter <strong>Einstellungen → Abmelden</strong> löschen. Bei einer Kontolöschung werden alle deine persönlichen Daten entfernt. Geteilte Haushaltsdaten bleiben für die anderen Haushaltsmitglieder erhalten.</p>
+
+            <h2>8. Kinder</h2>
+            <p>Kellr richtet sich nicht an Kinder unter 16 Jahren. Wir erheben wissentlich keine Daten von Kindern unter 16.</p>
+
+            <h2>9. Änderungen</h2>
+            <p>Bei wesentlichen Änderungen dieser Datenschutzerklärung informieren wir dich in der App. Die aktuelle Version ist immer auf dieser Seite verfügbar.</p>
+        </div>
+
+        <!-- ENGLISH -->
+        <div lang="en">
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">Effective: March 2026 · Data Controller: Michael Seidl, Austria · <a href="mailto:contact@kellr.app">contact@kellr.app</a></p>
+
+            <h2>1. Overview</h2>
+            <p>Kellr is a pantry management app. We take privacy seriously and only collect data necessary to operate the app. We do not sell data and do not use any tracking or analytics tools.</p>
+
+            <h2>2. Data We Collect</h2>
+            <h3>2.1 Account Data</h3>
+            <ul>
+                <li><strong>Email address</strong> — for registration and login</li>
+                <li><strong>Display name</strong> — freely chosen, shown within your household</li>
+                <li>With <strong>Apple Sign In</strong>: We only receive the email address shared by Apple (may be a relay address)</li>
+            </ul>
+            <h3>2.2 User-Provided Data</h3>
+            <ul>
+                <li><strong>Products:</strong> Name, barcode, quantity, expiry date, storage location, category, photos</li>
+                <li><strong>Household:</strong> Household name, member list</li>
+                <li><strong>Transactions:</strong> Stock changes with timestamps</li>
+            </ul>
+            <h3>2.3 Device Data</h3>
+            <ul>
+                <li><strong>Camera:</strong> Used only for the barcode scanner; images are not transmitted</li>
+                <li><strong>Local storage:</strong> SwiftData cache on your device (offline functionality)</li>
+            </ul>
+            <h3>2.4 Data We Do NOT Collect</h3>
+            <ul>
+                <li>No location data</li>
+                <li>No contacts</li>
+                <li>No advertising identifiers</li>
+                <li>No analytics or tracking</li>
+                <li>No usage statistics</li>
+                <li>No health data</li>
+            </ul>
+
+            <h2>3. How We Process Data</h2>
+            <h3>3.1 Hosting &amp; Storage</h3>
+            <p>All data is stored on <strong>Supabase</strong> (location: Frankfurt, Germany, EU). Supabase is GDPR-compliant. Product photos are stored in Supabase Storage.</p>
+            <h3>3.2 Third-Party Services</h3>
+            <ul>
+                <li><strong>OpenFoodFacts</strong> (openfoodfacts.org): When scanning a barcode, it is sent to the open OpenFoodFacts database to retrieve product information. OpenFoodFacts is a non-profit open data project.</li>
+                <li><strong>Amazon Affiliate Links:</strong> The app may display links to Amazon products containing an affiliate tag. You are only redirected to Amazon when you click such a link — Amazon's own privacy policy applies.</li>
+                <li><strong>Apple Sign In:</strong> Authentication through Apple's servers.</li>
+            </ul>
+            <h3>3.3 No Data Sharing</h3>
+            <p>We do not share your data with third parties, do not sell it, and do not use it for advertising.</p>
+
+            <h2>4. Household &amp; Shared Data</h2>
+            <p>When you create or join a household, all members share the product and transaction data of that household. Each member can add, edit, and remove products.</p>
+
+            <h2>5. Data Security</h2>
+            <ul>
+                <li>Passwords are hashed (bcrypt)</li>
+                <li>All API communication over HTTPS</li>
+                <li>Tokens stored in iOS Keychain</li>
+                <li>Data access only with valid, authenticated tokens</li>
+            </ul>
+
+            <h2>6. Your Rights (GDPR)</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li><strong>Access</strong> — What data is stored about you</li>
+                <li><strong>Rectification</strong> — Correct inaccurate data</li>
+                <li><strong>Erasure</strong> — Delete your account and all data</li>
+                <li><strong>Data portability</strong> — Export your data</li>
+                <li><strong>Object</strong> — To the processing of your data</li>
+                <li><strong>Complaint</strong> — With the Austrian Data Protection Authority (<a href="https://www.dsb.gv.at">dsb.gv.at</a>)</li>
+            </ul>
+            <p>Contact us at <a href="mailto:contact@kellr.app">contact@kellr.app</a> for any of these requests.</p>
+
+            <h2>7. Account Deletion</h2>
+            <p>You can delete your account at any time in the app under <strong>Settings → Sign Out</strong>. When your account is deleted, all your personal data is removed. Shared household data remains available to other household members.</p>
+
+            <h2>8. Children</h2>
+            <p>Kellr is not directed at children under 16. We do not knowingly collect data from children under 16.</p>
+
+            <h2>9. Changes</h2>
+            <p>If we make significant changes to this privacy policy, we will notify you in the app. The current version is always available on this page.</p>
+        </div>
+
+        <hr>
+        <p style="color: var(--text2); font-size: 0.85rem;">© 2026 Kellr · <a href="/">kellr.app</a></p>
+    </div>
+
+    <script>
+        function setLang(lang) {
+            const el = document.getElementById('privacy');
+            el.classList.toggle('en', lang === 'en');
+            document.getElementById('btn-de').classList.toggle('active', lang === 'de');
+            document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+        }
+    </script>
+</body>
+</html>
