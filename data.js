@@ -3,6 +3,80 @@
 
 const JOURNAL = [
     {
+        day: 7,
+        date: "2026-03-07",
+        title: { de: "Code Review &uuml;ber Nacht, Bugfixes am Tag", en: "Overnight Code Review, Daytime Bugfixes" },
+        body: {
+            de: `<p>Tag 7 begann um Mitternacht &mdash; mit einer KI die alleine arbeitet. Und endete mit den letzten Schliffs f&uuml;r den GoLive.</p>
+
+<h3>&Uuml;ber Nacht: Der gro&szlig;e Code Review</h3>
+<p>Gestern Abend habe ich meinem KI-Assistenten den Auftrag gegeben: &ldquo;Mach ein vollst&auml;ndiges Code Review, fixe alles, und mach 3 Durchl&auml;ufe.&rdquo; Dann bin ich schlafen gegangen.</p>
+<p>Das Ergebnis am Morgen:</p>
+<ul>
+<li><strong>3 Review-Runden</strong> mit insgesamt <strong>27 Findings</strong></li>
+<li><strong>2 Critical:</strong> Crash-Pfade bei ung&uuml;ltigen URLs + SwiftData-Migration behoben</li>
+<li><strong>6 High:</strong> Token-Refresh Race Condition (der JWT-Bug von gestern!), Kamera-Permission, Code-Duplikation</li>
+<li><strong>12 Medium + 7 Low:</strong> Von Force-Unwraps bis toter Code</li>
+<li><strong>1 versteckter Bug gefunden:</strong> Offline-Sync r&auml;umte pendingMutationIds nicht auf</li>
+<li>Gesamtbewertung: <strong>8.5/10 &mdash; Production-ready</strong></li>
+</ul>
+<p>6 Builds, alle gr&uuml;n. Keine menschliche Intervention n&ouml;tig. Das ist die Zukunft der Software-Entwicklung.</p>
+
+<h3>Tagsüber: Bugfixes &amp; GoLive-Sprint</h3>
+<p>Wenig Zeit heute, aber ein paar wichtige Dinge:</p>
+<ul>
+<li><strong>GoLive Sprint erstellt:</strong> Notion Sprint + GitHub Milestones. Ziel: 14. M&auml;rz.</li>
+<li><strong>Privacy Policy:</strong> DSGVO-konform, DE+EN, live auf kellr.app/privacy</li>
+<li><strong>App Store Metadata:</strong> Beschreibung, Keywords, Promo Text &mdash; alles vorbereitet</li>
+<li><strong>Demo-Account:</strong> F&uuml;r den Apple Reviewer angelegt</li>
+<li><strong>Scanner-Flow gefixt:</strong> Nach Produkterfassung zur&uuml;ck zum Inventar statt Scanner</li>
+<li><strong>Lagerort-UX:</strong> Letzter Lagerort wird gemerkt, Filter-Pills im Inventar, Lagerorte als eigenes Men&uuml;</li>
+</ul>
+
+<h3>Das pers&ouml;nliche Fazit</h3>
+<p>Die &Uuml;bernacht-Session war beeindruckend. 27 Fixes ohne mein Zutun. Aber die UX-Bugs am Tag &mdash; die findet man nur durch echtes Benutzen. Beides zusammen macht die App besser.</p>
+<p>Wir bewegen uns langsam aber sicher Richtung GoLive. N&auml;chste Woche wird spannend.</p>`,
+            en: `<p>Day 7 started at midnight &mdash; with an AI working alone. And ended with final polish for GoLive.</p>
+
+<h3>Overnight: The Big Code Review</h3>
+<p>Last night I told my AI assistant: &ldquo;Do a complete code review, fix everything, 3 rounds.&rdquo; Then I went to sleep.</p>
+<p>The result in the morning:</p>
+<ul>
+<li><strong>3 review rounds</strong> with <strong>27 findings</strong> total</li>
+<li><strong>2 Critical:</strong> Crash paths from invalid URLs + SwiftData migration fixed</li>
+<li><strong>6 High:</strong> Token refresh race condition (yesterday&apos;s JWT bug!), camera permissions, code duplication</li>
+<li><strong>12 Medium + 7 Low:</strong> From force-unwraps to dead code</li>
+<li><strong>1 hidden bug found:</strong> Offline sync wasn&apos;t cleaning up pendingMutationIds</li>
+<li>Overall rating: <strong>8.5/10 &mdash; Production-ready</strong></li>
+</ul>
+<p>6 builds, all green. No human intervention needed. This is the future of software development.</p>
+
+<h3>Daytime: Bugfixes &amp; GoLive Sprint</h3>
+<p>Not much time today, but a few important things:</p>
+<ul>
+<li><strong>GoLive Sprint created:</strong> Notion Sprint + GitHub Milestones. Target: March 14th.</li>
+<li><strong>Privacy Policy:</strong> GDPR-compliant, DE+EN, live at kellr.app/privacy</li>
+<li><strong>App Store Metadata:</strong> Description, keywords, promo text &mdash; all prepared</li>
+<li><strong>Demo account:</strong> Created for the Apple reviewer</li>
+<li><strong>Scanner flow fixed:</strong> After saving a product, back to inventory instead of scanner</li>
+<li><strong>Location UX:</strong> Last location remembered, filter pills in inventory, locations as own menu</li>
+</ul>
+
+<h3>Personal takeaway</h3>
+<p>The overnight session was impressive. 27 fixes without my involvement. But the UX bugs during the day &mdash; you only find those by actually using the app. Both together make it better.</p>
+<p>We&apos;re slowly but surely moving towards GoLive. Next week will be exciting.</p>`
+        },
+        stats: {
+            features: 3,
+            commits: 15,
+            issues: 6,
+            cost: "~100&euro;",
+            time: "~3h (+KI &uuml;ber Nacht)",
+            messages: "~80"
+        },
+        tags: ["Code Review", "GoLive", "Privacy", "UX", "Day 7"]
+    },
+    {
         day: 6,
         date: "2026-03-05",
         title: { de: "Ruhiger Tag, neue Tester", en: "Slow Day, New Testers" },
